@@ -1,2 +1,2 @@
-node gpxsplit.js %1 
+node bin/gpxsplit %1 
 pause

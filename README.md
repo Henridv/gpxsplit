@@ -15,12 +15,19 @@ gpxsplit is command line tool to split and convert GPX files.
 * From command line execute command:
 
 ```sh
-npm install gpxsplit -g
+$ npm install -g gpxsplit 
 ``` 
 
 ## Usage
 
-For full list of supported options execute
 ```sh
-gpxsplit -h
+$ gpxsplit [options] [path_to_gpx_file]
 ``` 
+
+For full list of supported options execute:
+```sh
+$ gpxsplit -h
+``` 
+
+
+
