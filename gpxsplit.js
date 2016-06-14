@@ -6,8 +6,9 @@ var chalk = require('chalk');
 var GpxSplit = require('./lib/gpxsplit.js');
 var program = require('commander');
 var Q = require('q');
-var pkginfo = require('pkginfo')(module, 'version');
 var filepath = require('filepath');
+
+require('pkginfo')(module, 'version');
 
 program
         .version(module.exports.version)
@@ -17,6 +18,8 @@ program
         .option('-o, --output <value>', 'Converted GPX destination file', false)
         .option('-b, --backup', 'Do backup', false)
         .option('-d, --decimals [value]', 'Decimal digits precision for lat/long', parseInt)
+        .option('-p, --postfix', 'Postfix added to converted file name', '-split')
+        .option('--noNameFix', 'Do not shorten track name', false)
         .option('--noSplit', 'Do not split track')
         .option('--noWaypoints', 'Do not make waypoints')
         .action(function (gpxFile) {
