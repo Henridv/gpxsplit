@@ -1,10 +1,17 @@
 {
     "name": "gpxsplit",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Split GPX files",
-    "main": "gpxsplit.js",
+    "main": "lib/gpxsplit.js",
     "author": "Dominik Dzienia <dominik.dzienia@gmail.com>",
     "license": "MIT",
+    "keywords": [
+        "geo",
+        "gpx",
+        "gps",
+        "tool",
+        "commandline"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/dlvoy/gpxsplit.git"
